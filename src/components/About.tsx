@@ -1,14 +1,26 @@
 import * as React from 'react';
-import {Container, Typography} from '@material-ui/core';
+import {Container, Typography, makeStyles} from '@material-ui/core';
 import {FC} from 'react';
 
 export interface IAboutProps {
 }
 
-export const About:FC = (props: IAboutProps) => {
+const useStyles = makeStyles((theme) => ({
+  about: {
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: "500px",
+      position: "absolute",
+      background: "none",
+      zIndex: "-1",
+    },
+  },
+}));
 
+export const About:FC = (props: IAboutProps) => {
+  const classes = useStyles();
   return (
     <Container
+      className={classes.about}
       style={{ backgroundColor: "white", marginTop: 100, textAlign: "center" }}
     >
       <Typography

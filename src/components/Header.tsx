@@ -13,6 +13,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import {Version} from "./Version";
+import {Hamburger} from "./Hamburger";
 
 
 export interface IHeaderProps {
@@ -27,6 +28,11 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#213d7a",
     position: "fixed",
     width: "97%",
+    [theme.breakpoints.down("sm")]: {
+      backgroundColor: "#4279f4",
+      position: "fixed",
+      width: "23%",
+    },
   },
   icons: {
     alignItems: "center",
@@ -43,6 +49,17 @@ const useStyles = makeStyles((theme) => ({
     padding: "6px",
     top: 0,
     borderTop: "none",
+    [theme.breakpoints.down("sm")]: {
+      zIndex: "1",
+    },
+  },
+  menu: {
+    display: "none",
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      position: "absolute",
+      marginLeft: "200px",
+    },
   },
   doc: {
     marginLeft: 700,
@@ -90,9 +107,7 @@ export const Header:FC = (props: IHeaderProps) => {
   const classes = useStyles();
 
   return (
-    <AppBar
-      position="fixed"
-    >
+    <AppBar position="fixed">
       <Toolbar className={classes.toolbar}>
         <CardMedia
           className={classes.media}
@@ -118,6 +133,9 @@ export const Header:FC = (props: IHeaderProps) => {
           </Typography>
         </Container>
         <Version />
+        <Typography className={classes.menu}>
+          <Hamburger />
+        </Typography>
       </Toolbar>
     </AppBar>
   );
