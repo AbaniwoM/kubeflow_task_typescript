@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {Button, CardMedia, Container} from '@material-ui/core';
-import { makeStyles, Typography, Link } from '@material-ui/core';
+import { makeStyles, Typography} from '@material-ui/core';
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ModeIcon from "@mui/icons-material/Mode";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
