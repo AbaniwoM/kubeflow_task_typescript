@@ -1,9 +1,10 @@
 import * as React from 'react';
 import {Button, CardMedia, Container} from '@material-ui/core';
-import { makeStyles, Typography } from '@material-ui/core';
+import { makeStyles, Typography, Link } from '@material-ui/core';
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ModeIcon from "@mui/icons-material/Mode";
 import ArrowDropDownCircleIcon from "@mui/icons-material/ArrowDropDownCircle";
+import {useNavigate}  from "react-router-dom";
 
 export interface IHeroProps {
 }
@@ -18,10 +19,10 @@ const useStyles = makeStyles((theme) => ({
     right: 0,
   },
   over: {
-    backgroundColor: "#002148",
+    backgroundColor: "#213d7a",
     width: "100%",
     height: "100vh",
-    overflowX: "hidden",
+    overflowX: "hidden"
   },
   main: {
     marginTop: "-450px",
@@ -59,6 +60,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const Hero = (props: IHeroProps) => {
   const classes = useStyles();
+  const navigate = useNavigate();
   return (
     <Container className={classes.over}>
       <CardMedia
@@ -72,13 +74,16 @@ export const Hero = (props: IHeroProps) => {
         The Machine Learning Toolkit for Kubernetes
       </Typography>
       <Container style={{ marginLeft: 416, marginTop: 16 }}>
-        <Button
-          variant="contained"
-          className={classes.button}
-          style={{ backgroundColor: "#4279f4" }}
-        >
-          Get Started
-          <ArrowCircleRightIcon style={{ color: "white", marginLeft: "8px" }} />
+      <Button
+            variant="contained"
+            className={classes.button}
+            style={{ backgroundColor: "#4279f4" }}
+            onClick={() => navigate('/dashboard/')}
+          >
+            Get Started
+            <ArrowCircleRightIcon
+              style={{ color: "white", marginLeft: "8px" }}
+            />
         </Button>
         <Button
           variant="contained"
@@ -89,15 +94,15 @@ export const Hero = (props: IHeroProps) => {
           <ModeIcon style={{ color: "black", marginLeft: "8px" }} />
         </Button>
       </Container>
-      <ArrowDropDownCircleIcon
-        style={{
-          color: "white",
-          fontSize: "4.2rem",
-          marginLeft: 590,
-          marginTop: 80,
-          cursor: "pointer",
-        }}
-      />
+        <ArrowDropDownCircleIcon
+          style={{
+            color: "white",
+            fontSize: "4.2rem",
+            marginLeft: 590,
+            marginTop: 80,
+            cursor: "pointer",
+          }}
+        />
     </Container>
   );
 }

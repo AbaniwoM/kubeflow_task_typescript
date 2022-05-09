@@ -1,22 +1,18 @@
-import {FC} from "react";
-import { About } from "./components/About";
-import {Header} from './components/Header';
-import { Hero } from "./components/Hero";
+import * as React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Dashboard } from './components/Dashboard';
+import { Home } from './components/Home';
 
-const App:FC = () => {
-  return (
-    <div
-      className="App"
-      style={{
-        marginRight: "-7px",
-        marginLeft: "-8px",
-      }}
-    >
-      <Header />
-      <Hero />
-      <About />
-    </div>
-  );
+export interface IAppProps {
 }
 
-export default App;
+export function App (props: IAppProps) {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="dashboard" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}

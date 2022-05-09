@@ -1,5 +1,5 @@
-import * as React from 'react';
-import {FC} from 'react';
+import * as React from "react";
+import { FC } from "react";
 import {
   AppBar,
   CardMedia,
@@ -12,19 +12,16 @@ import {
 import ArticleIcon from "@mui/icons-material/Article";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import {Version} from "./Version";
+import { Version } from "./Version";
 
-
-export interface IHeaderProps {
-
-}
+export interface IDashHeaderProps {}
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
     // backgroundColor: "#4279f4",
-    backgroundColor: "#213d7a",
+    backgroundColor: "#4279f4",
     position: "fixed",
     width: "97%",
   },
@@ -85,14 +82,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
-export const Header:FC = (props: IHeaderProps) => {
+export const DashHeader: FC = (props: IDashHeaderProps) => {
   const classes = useStyles();
 
   return (
-    <AppBar
-      position="fixed"
-    >
+    <AppBar position="fixed">
       <Toolbar className={classes.toolbar}>
         <CardMedia
           className={classes.media}
@@ -121,4 +115,4 @@ export const Header:FC = (props: IHeaderProps) => {
       </Toolbar>
     </AppBar>
   );
-}
+};
