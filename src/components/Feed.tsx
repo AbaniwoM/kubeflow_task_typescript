@@ -194,7 +194,7 @@ export function Feed (props: IFeedProps) {
         }}
       >
         Last modified November 29, 2021:
-        <Link style={{ color: "#4279f4", marginLeft: "5px" }}>
+        <Link underline="none" style={{ color: "#4279f4", marginLeft: "5px", cursor: "pointer" }}>
           restructure `About` section (#3007) (6c527dd0)
         </Link>
       </Typography>
