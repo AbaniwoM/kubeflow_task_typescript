@@ -18,6 +18,57 @@ const useStyles = makeStyles((theme) => ({
     marginTop: "16px",
     width: "19%",
     height: "8vh",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      padding: "40px 100px 40px 120px",
+      marginLeft: "-10px",
+      borderRadius: "38px",
+    },
+  },
+  check: {
+    [theme.breakpoints.down("sm")]: {
+      left: "-20px",
+      position: "relative",
+    },
+  },
+  ftr: {
+    [theme.breakpoints.down("sm")]: {
+      height: "70vh",
+      position: "relative",
+    },
+  },
+  ext: {
+    [theme.breakpoints.down("sm")]: {
+      height: "80vh",
+      position: "absolute",
+    },
+  },
+  det: {
+    [theme.breakpoints.down("sm")]: {
+      left: "-140px",
+      position: "absolute",
+      textAlign: "center",
+      width: "22%",
+      paddingTop: "30px",
+    },
+  },
+  pri: {
+    [theme.breakpoints.down("sm")]: {
+      left: "-340px",
+      position: "absolute",
+      paddingTop: "100px",
+      backgroundColor: "#213d7a",
+      zIndex: "-1",
+      width: "50%",
+      marginLeft: "-70px",
+      paddingBottom: "30px",
+    },
+  },
+  cons: {
+     [theme.breakpoints.down("sm")]: {
+       left: "-40px",
+       position: "absolute",
+     },
   },
 }));
 
@@ -47,8 +98,9 @@ export const Community: FC = (props: IAboutProps) => {
         style={{
           fontSize: "20.25px",
           marginTop: "20px",
-          marginLeft: "25px"
+          marginLeft: "25px",
         }}
+        className={classes.check}
       >
         Check out the
         <Link
@@ -108,8 +160,12 @@ export const Community: FC = (props: IAboutProps) => {
           marginTop: "80px",
           zIndex: "9",
         }}
+        className={classes.ftr}
       >
-        <Container style={{ marginTop: "18px", marginLeft: "-643px" }}>
+        <Container
+          style={{ marginTop: "18px", marginLeft: "-643px" }}
+          className={classes.cons}
+        >
           <DateRangeIcon
             style={{
               position: "absolute",
@@ -138,6 +194,7 @@ export const Community: FC = (props: IAboutProps) => {
             marginTop: "30px",
             marginLeft: "50px",
           }}
+          className={classes.det}
         >
           &copy; 2022 The Kubeflow Authors. | Documentation Distributed under CC
           BY 4.0
@@ -151,6 +208,7 @@ export const Community: FC = (props: IAboutProps) => {
             marginTop: "5px",
             cursor: "pointer",
           }}
+          className={classes.pri}
         >
           Privacy Policy
         </Typography>
@@ -164,6 +222,7 @@ export const Community: FC = (props: IAboutProps) => {
           height: "15vh",
           marginBottom: "0px",
         }}
+        className={classes.ext}
       ></Typography>
     </Container>
   );

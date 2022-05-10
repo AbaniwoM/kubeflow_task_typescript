@@ -247,6 +247,8 @@ export default function RowAndColumnSpacing() {
             borderRadius: "0px",
             height: "58vh",
             padding: "23px",
+            width: "85.3%",
+            marginLeft: "0px",
           }}
           className={classes.del}
         >

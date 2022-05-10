@@ -23,14 +23,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-100px",
       marginTop: "20px",
-      width: "106%",
+      width: "111%",
     },
   },
   nes: {
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-100px",
       position: "relative",
-      width: "94%",
+      width: "99%",
     },
   },
   mul: {
@@ -40,10 +40,28 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   frm: {
-    width: "70%",
+    width: "71%",
     marginLeft: "19px",
   },
   wrk: {
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: "-70px",
+      position: "relative",
+    },
+  },
+  com: {
+    [theme.breakpoints.down("sm")]: {
+      width: "79%",
+      marginLeft: "19px",
+    },
+  },
+  comcn: {
+    [theme.breakpoints.down("sm")]: {
+      width: "71%",
+      marginLeft: "19px",
+    },
+  },
+  nity: {
     [theme.breakpoints.down("sm")]: {
       paddingLeft: "-70px",
       position: "relative",
@@ -153,6 +171,8 @@ export default function RowAndColumnSpacing() {
             borderRadius: "0px",
             height: "46vh",
             padding: "23px",
+            marginLeft: "-1px",
+            width: "85%",
           }}
           className={classes.frm}
         >
@@ -260,6 +280,7 @@ export default function RowAndColumnSpacing() {
             border: "1px solid rgba(0,0,0,.125)",
             borderRadius: "5px 5px 0px 0px",
           }}
+          className={classes.com}
         >
           <CardMedia
             image="https://www.kubeflow.org/docs/images/logos/Community.png"
@@ -277,6 +298,7 @@ export default function RowAndColumnSpacing() {
             height: "46vh",
             padding: "23px",
           }}
+          className={classes.comcn}
         >
           <Typography
             style={{
@@ -287,6 +309,7 @@ export default function RowAndColumnSpacing() {
               width: "110%",
               marginLeft: "-93px",
             }}
+            className={classes.nity}
           >
             Community
           </Typography>
