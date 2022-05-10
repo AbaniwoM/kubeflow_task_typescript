@@ -3,7 +3,7 @@ import {DashHeader} from './DashHeader';
 import { Leftbar } from "./Leftbar";
 import { Feed } from "./Feed";
 import { Rightbar } from "./Rightbar";
-import {Grid, makeStyles} from '@material-ui/core';
+import {Grid, makeStyles, Container} from '@material-ui/core';
 
 export interface IDashboardProps {
 }
@@ -14,12 +14,17 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  contin: {
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+    },
+  },
 }));
 
 export function Dashboard (props: IDashboardProps) {
   const classes = useStyles();
   return (
-    <div>
+    <Container className={classes.contin}>
       <DashHeader />
       <Grid container>
         <Grid item sm={2} xs={2}>
@@ -31,8 +36,7 @@ export function Dashboard (props: IDashboardProps) {
         <Grid item sm={3} className={classes.right}>
           <Rightbar />
         </Grid>
-      </Grid>
-     
-    </div>
+        </Grid>
+      </Container>
   );
 }

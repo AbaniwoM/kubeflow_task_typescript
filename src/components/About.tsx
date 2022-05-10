@@ -8,16 +8,22 @@ export interface IAboutProps {
 const useStyles = makeStyles((theme) => ({
   top: {
     [theme.breakpoints.down("sm")]: {
-    marginTop: "530px",
-    marginLeft: "30px",
-    position: "absolute",
-  },
+      marginTop: "610px",
+      paddingLeft: "20px",
+      position: "absolute",
+    },
   },
   sub: {
     [theme.breakpoints.down("sm")]: {
-    paddingTop: "590px",
-    position: "relative",
+      paddingTop: "670px",
+      paddingLeft: "-50px",
+      position: "relative",
+    },
   },
+  conta: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "-30px",
+    },
   },
 }));
 
@@ -26,6 +32,7 @@ export const About:FC = (props: IAboutProps) => {
   return (
     <Container
       style={{ backgroundColor: "white", marginTop: 100, textAlign: "center" }}
+      className={classes.conta}
     >
       <Typography
         className={classes.top}

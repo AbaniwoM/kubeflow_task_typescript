@@ -29,10 +29,10 @@ const useStyles = makeStyles((theme) => ({
     overflowX: "hidden",
     [theme.breakpoints.down("sm")]: {
       position: "absolute",
-      width: "98%",
+      width: "106%",
       height: "120vh",
       marginTop: "-45px",
-      marginLeft: "-16px",
+      marginLeft: "-20px",
       marginBottom: "40px",
     },
   },
@@ -68,10 +68,11 @@ const useStyles = makeStyles((theme) => ({
     width: "14%",
     height: "8vh",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "-375px",
+      marginLeft: "-360px",
       width: "50%",
       marginTop: "10px",
       position: "absolute",
+      zIndex: "1",
     },
   },
   buttontwo: {

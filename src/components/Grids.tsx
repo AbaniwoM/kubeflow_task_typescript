@@ -21,34 +21,34 @@ const useStyles = makeStyles((theme) => ({
   },
   note: {
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "-115px",
-      width: "114%",
+      marginLeft: "-100px",
+      width: "113%",
     },
   },
   notetext: {
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "-115px",
+      marginLeft: "-100px",
       width: "102%",
       height: "78vh",
     },
   },
   ten: {
     [theme.breakpoints.down("sm")]: {
-      width: "93%",
+      width: "86%",
       marginTop: "20px",
-      marginLeft: "2px",
+      marginLeft: "20px",
     },
   },
   tentext: {
     [theme.breakpoints.down("sm")]: {
-      width: "84%",
-      marginLeft: "1px",
+      width: "77%",
+      marginLeft: "20px",
     },
   },
   training: {
     [theme.breakpoints.down("sm")]: {
       width: "60%",
-      paddingLeft: "25px",
+      paddingLeft: "13px",
       textAlign: "center",
       position: "relative",
     },

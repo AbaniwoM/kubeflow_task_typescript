@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize: "15.4px",
     fontWeight: 800,
-    marginLeft: 6,
+    marginLeft: 10,
   },
 }));
 export const Hamburger = () => {
@@ -75,7 +75,8 @@ export const Hamburger = () => {
             textTransform: "capitalize",
             fontSize: "15.4px",
             fontWeight: 800,
-            marginRight: 2,
+            marginRight: 1,
+            marginLeft: 12,
           }}
         >
           <MenuIcon />
