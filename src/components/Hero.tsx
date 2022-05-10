@@ -18,19 +18,22 @@ const useStyles = makeStyles((theme) => ({
     left: 0,
     right: 0,
     [theme.breakpoints.down("sm")]: {
-      position: "fixed",
+      position: "absolute",
     },
   },
   over: {
     backgroundColor: "#213d7a",
     width: "100%",
     height: "100vh",
+    marginLeft: "1px",
     overflowX: "hidden",
     [theme.breakpoints.down("sm")]: {
-      position: "fixed",
-      width: "26%",
+      position: "absolute",
+      width: "98%",
+      height: "120vh",
       marginTop: "-45px",
-      marginLeft: "-10px",
+      marginLeft: "-16px",
+      marginBottom: "40px",
     },
   },
   main: {
@@ -40,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 650,
     fontSize: "48px",
     [theme.breakpoints.down("sm")]: {
-      marginTop: "120px",
+      marginTop: "170px",
     },
   },
   paragraph: {
@@ -66,7 +69,9 @@ const useStyles = makeStyles((theme) => ({
     height: "8vh",
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-375px",
-      position: "fixed",
+      width: "50%",
+      marginTop: "10px",
+      position: "absolute",
     },
   },
   buttontwo: {
@@ -77,8 +82,21 @@ const useStyles = makeStyles((theme) => ({
     width: "13%",
     height: "8vh",
     [theme.breakpoints.down("sm")]: {
-      marginLeft: "-250px",
-      position: "fixed",
+      position: "absolute",
+      paddingLeft: "-200",
+    },
+  },
+  holder: {
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      flexDirection: "column",
+      width: "50%",
+    },
+  },
+  pointer: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "20px",
+      position: "absolute",
     },
   },
   overlay: {},
@@ -102,7 +120,7 @@ export const Hero = (props: IHeroProps) => {
           backgroundColor: "#213d7a",
           height: "91vh",
           width: "20%",
-        }}       
+        }}
       ></Typography>
       <Typography
         style={{
@@ -112,7 +130,7 @@ export const Hero = (props: IHeroProps) => {
           position: "absolute",
           backgroundColor: "#213d7a",
           height: "91vh",
-          width: "20%",
+          width: "21.2%",
         }}
       ></Typography>
       <Typography variant="h4" className={classes.main}>
@@ -121,7 +139,10 @@ export const Hero = (props: IHeroProps) => {
       <Typography variant="h4" className={classes.paragraph}>
         The Machine Learning Toolkit for Kubernetes
       </Typography>
-      <Container style={{ marginLeft: 416, marginTop: 16 }}>
+      <Container
+        className={classes.holder}
+        style={{ marginLeft: 416, marginTop: 16 }}
+      >
         <Button
           variant="contained"
           className={classes.button}
@@ -141,6 +162,7 @@ export const Hero = (props: IHeroProps) => {
         </Button>
       </Container>
       <ArrowDropDownCircleIcon
+        className={classes.pointer}
         style={{
           color: "white",
           fontSize: "4.2rem",

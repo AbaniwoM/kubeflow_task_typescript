@@ -47,6 +47,7 @@ export const Community: FC = (props: IAboutProps) => {
         style={{
           fontSize: "20.25px",
           marginTop: "20px",
+          marginLeft: "25px"
         }}
       >
         Check out the
@@ -57,6 +58,7 @@ export const Community: FC = (props: IAboutProps) => {
             marginLeft: "5px",
             marginRight: "5px",
           }}
+          underline="none"
         >
           weekly community call
         </Link>
@@ -68,6 +70,7 @@ export const Community: FC = (props: IAboutProps) => {
             marginLeft: "5px",
             marginRight: "5px",
           }}
+          underline="none"
         >
           mailing list
         </Link>
@@ -79,6 +82,7 @@ export const Community: FC = (props: IAboutProps) => {
             marginLeft: "5px",
             marginRight: "5px",
           }}
+          underline="none"
         >
           Slack Workspace!
         </Link>
@@ -86,7 +90,7 @@ export const Community: FC = (props: IAboutProps) => {
       <Button
         variant="contained"
         className={classes.button}
-        style={{ backgroundColor: "#4279f4" }}
+        style={{ backgroundColor: "#4279f4", width: "20%" }}
       >
         Join the community
         <ArrowCircleRightIcon style={{ color: "white", marginLeft: "8px" }} />
@@ -95,12 +99,12 @@ export const Community: FC = (props: IAboutProps) => {
         style={{
           backgroundColor: "#213d7a",
           backgroundSize: "cover",
-          width: "380%",
+          width: "382%",
           height: "15vh",
-          marginRight: "0px",
+          marginRight: "-1px",
           padding: 0,
           position: "absolute",
-          marginLeft: "10px",
+          marginLeft: "13px",
           marginTop: "80px",
           zIndex: "9",
         }}
@@ -145,22 +149,22 @@ export const Community: FC = (props: IAboutProps) => {
             textAlign: "center",
             marginLeft: "50px",
             marginTop: "5px",
+            cursor: "pointer",
           }}
         >
           Privacy Policy
         </Typography>
       </Container>
-      <Container
+      <Typography
         style={{
           marginLeft: "-620px",
           marginTop: "80px",
-          position: "absolute",
+          position: "relative",
           backgroundColor: "#213d7a",
           height: "15vh",
-          marginBottom: "0px"
+          marginBottom: "0px",
         }}
-      >
-      </Container>
+      ></Typography>
     </Container>
   );
 };

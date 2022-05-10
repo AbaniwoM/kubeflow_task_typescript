@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       backgroundColor: "#4279f4",
       position: "fixed",
-      width: "23%",
+      width: "90%",
     },
   },
   icons: {

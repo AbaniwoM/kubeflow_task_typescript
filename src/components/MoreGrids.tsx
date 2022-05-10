@@ -30,6 +30,7 @@ export default function RowAndColumnSpacing() {
       columns={{ xs: 2, sm: 8, md: 11 }}
       style={{
         marginTop: "-6px",
+        marginLeft: "-13px",
       }}
     >
       <Grid item xs={2} sm={4} md={3} style={{ marginLeft: "120px" }}>
@@ -61,9 +62,9 @@ export default function RowAndColumnSpacing() {
               color: "white",
               fontWeight: "600",
               fontSize: "20px",
-              marginTop: "2px",
+              marginTop: "-4px",
               marginRight: "200px",
-              marginLeft: "-10px",
+              marginLeft: "5px",
             }}
           >
             Pipelines
@@ -72,7 +73,7 @@ export default function RowAndColumnSpacing() {
             style={{
               color: "white",
               width: "100%",
-              marginTop: "20px",
+              marginTop: "12px",
               fontSize: "16px",
               textAlign: "left",
             }}
@@ -126,9 +127,9 @@ export default function RowAndColumnSpacing() {
               color: "white",
               fontWeight: "600",
               fontSize: "20px",
-              marginTop: "2px",
+              marginTop: "-4px",
               marginRight: "170px",
-              marginLeft: "-82px",
+              marginLeft: "-65px",
               width: "110%",
             }}
           >
@@ -138,7 +139,7 @@ export default function RowAndColumnSpacing() {
             style={{
               color: "white",
               width: "100%",
-              marginTop: "20px",
+              marginTop: "10px",
               fontSize: "16px",
               textAlign: "left",
             }}
@@ -247,10 +248,9 @@ export default function RowAndColumnSpacing() {
               color: "white",
               fontWeight: "600",
               fontSize: "20px",
-              marginTop: "2px",
-              marginRight: "190px",
+              marginTop: "-4px",
               width: "110%",
-              marginLeft: "-106px",
+              marginLeft: "-93px",
             }}
           >
             Community
@@ -259,7 +259,7 @@ export default function RowAndColumnSpacing() {
             style={{
               color: "white",
               width: "100%",
-              marginTop: "20px",
+              marginTop: "12px",
               fontSize: "16px",
               textAlign: "left",
             }}

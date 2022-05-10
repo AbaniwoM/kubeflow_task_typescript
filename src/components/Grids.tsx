@@ -19,6 +19,46 @@ const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
   },
+  note: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "-115px",
+      width: "114%",
+    },
+  },
+  notetext: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "-115px",
+      width: "102%",
+      height: "78vh",
+    },
+  },
+  ten: {
+    [theme.breakpoints.down("sm")]: {
+      width: "93%",
+      marginTop: "20px",
+      marginLeft: "2px",
+    },
+  },
+  tentext: {
+    [theme.breakpoints.down("sm")]: {
+      width: "84%",
+      marginLeft: "1px",
+    },
+  },
+  training: {
+    [theme.breakpoints.down("sm")]: {
+      width: "60%",
+      paddingLeft: "25px",
+      textAlign: "center",
+      position: "relative",
+    },
+  },
+  provide: {
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: "-15px",
+      position: "relative",
+    }
+  },
 }));
 
 export default function RowAndColumnSpacing() {
@@ -28,7 +68,7 @@ export default function RowAndColumnSpacing() {
       container
       spacing={{ xs: 2, md: 4 }}
       columns={{ xs: 2, sm: 8, md: 11 }}
-      style={{ marginTop: "55px" }}
+      style={{ marginTop: "55px", marginLeft: "-12px" }}
     >
       <Grid item xs={2} sm={4} md={3} style={{ marginLeft: "120px" }}>
         <Item
@@ -36,6 +76,7 @@ export default function RowAndColumnSpacing() {
             border: "1px solid rgba(0,0,0,.125)",
             borderRadius: "5px 5px 0px 0px",
           }}
+          className={classes.note}
         >
           <CardMedia
             image="https://www.kubeflow.org/docs/images/logos/Jupyter.png"
@@ -53,13 +94,14 @@ export default function RowAndColumnSpacing() {
             height: "58vh",
             padding: "23px",
           }}
+          className={classes.notetext}
         >
           <Typography
             style={{
               color: "white",
               fontWeight: "600",
               fontSize: "20px",
-              marginTop: "2px",
+              marginTop: "-4px",
               marginRight: "190px",
             }}
           >
@@ -69,7 +111,7 @@ export default function RowAndColumnSpacing() {
             style={{
               color: "white",
               width: "100%",
-              marginTop: "20px",
+              marginTop: "13px",
               fontSize: "16px",
               textAlign: "left",
             }}
@@ -100,6 +142,7 @@ export default function RowAndColumnSpacing() {
             border: "1px solid rgba(0,0,0,.125)",
             borderRadius: "5px 5px 0px 0px",
           }}
+          className={classes.ten}
         >
           <CardMedia
             image="https://www.kubeflow.org/docs/images/logos/TensorFlow.png"
@@ -117,17 +160,19 @@ export default function RowAndColumnSpacing() {
             height: "58vh",
             padding: "23px",
           }}
+          className={classes.tentext}
         >
           <Typography
             style={{
               color: "white",
               fontWeight: "600",
               fontSize: "20px",
-              marginTop: "2px",
+              marginTop: "-4px",
               marginRight: "170px",
-              marginLeft: "-35px",
+              marginLeft: "-18px",
               width: "110%",
             }}
+            className={classes.training}
           >
             TensorFlow model training
           </Typography>
@@ -135,10 +180,11 @@ export default function RowAndColumnSpacing() {
             style={{
               color: "white",
               width: "100%",
-              marginTop: "20px",
+              marginTop: "13px",
               fontSize: "16px",
               textAlign: "left",
             }}
+            className={classes.provide}
           >
             Kubeflow provides a custom
             <Link
@@ -190,10 +236,10 @@ export default function RowAndColumnSpacing() {
               color: "white",
               fontWeight: "600",
               fontSize: "20px",
-              marginTop: "2px",
+              marginTop: "-4px",
               marginRight: "190px",
               width: "110%",
-              marginLeft: "-95px",
+              marginLeft: "-79px",
             }}
           >
             Model serving
@@ -201,8 +247,8 @@ export default function RowAndColumnSpacing() {
           <Typography
             style={{
               color: "white",
-              width: "100%",
-              marginTop: "20px",
+              width: "105%",
+              marginTop: "12px",
               fontSize: "16px",
               textAlign: "left",
             }}
