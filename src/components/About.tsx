@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   conta: {
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-30px",
+      paddingTop: "60px",
     },
   },
 }));
