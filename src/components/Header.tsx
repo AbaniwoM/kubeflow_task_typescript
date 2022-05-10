@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     // backgroundColor: "#4279f4",
     backgroundColor: "#213d7a",
     position: "fixed",
-    width: "97%",
+    width: "99%",
     [theme.breakpoints.down("sm")]: {
       backgroundColor: "#4279f4",
       position: "fixed",
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       display: "block",
       position: "absolute",
-      marginLeft: "200px",
+      marginLeft: "237px",
     },
   },
   doc: {

@@ -22,19 +22,19 @@ const useStyles = makeStyles((theme) => ({
   note: {
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-100px",
-      width: "113%",
+      width: "115%",
     },
   },
   notetext: {
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-100px",
-      width: "102%",
+      width: "104%",
       height: "78vh",
     },
   },
   ten: {
     [theme.breakpoints.down("sm")]: {
-      width: "86%",
+      width: "85%",
       marginTop: "20px",
       marginLeft: "20px",
     },
@@ -57,7 +57,24 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       paddingTop: "-15px",
       position: "relative",
-    }
+    },
+  },
+  del: {
+    width: "85%",
+    marginLeft: "20px",
+  },
+  sor: {
+    [theme.breakpoints.down("sm")]: {
+      width: "85%",
+      marginLeft: "20px",
+      marginTop: "20px",
+    },
+  },
+  ser: {
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: "-70px",
+      position: "relative",
+    },
   },
 }));
 
@@ -213,6 +230,7 @@ export default function RowAndColumnSpacing() {
             border: "1px solid rgba(0,0,0,.125)",
             borderRadius: "5px 5px 0px 0px",
           }}
+          className={classes.sor}
         >
           <CardMedia
             image="https://www.kubeflow.org/docs/images/logos/Models.png"
@@ -230,6 +248,7 @@ export default function RowAndColumnSpacing() {
             height: "58vh",
             padding: "23px",
           }}
+          className={classes.del}
         >
           <Typography
             style={{
@@ -241,6 +260,7 @@ export default function RowAndColumnSpacing() {
               width: "110%",
               marginLeft: "-79px",
             }}
+            className={classes.ser}
           >
             Model serving
           </Typography>

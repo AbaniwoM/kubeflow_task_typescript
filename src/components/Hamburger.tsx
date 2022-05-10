@@ -79,7 +79,7 @@ export const Hamburger = () => {
             marginLeft: 12,
           }}
         >
-          <MenuIcon />
+          <MenuIcon style={{fontSize: "2rem"}} />
         </Button>
         <Popper
           open={open}
