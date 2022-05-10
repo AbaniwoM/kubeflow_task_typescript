@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       left: "-260px",
       position: "absolute",
-      paddingTop: "100px",
+      paddingTop: "110px",
       backgroundColor: "#213d7a",
       zIndex: "-1",
       width: "50%",
@@ -100,6 +100,12 @@ const useStyles = makeStyles((theme) => ({
       position: "absolute",
     },
   },
+  ash: {
+    display: "block",
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    }
+  }
 }));
 
 const Search = styled("div")(({ theme }) => ({
@@ -375,7 +381,7 @@ export function Feed (props: IFeedProps) {
         className={classes.ftr}
       >
         <Container
-          style={{ left: "-1px", position: "absolute", marginTop: "20px"  }}
+          style={{ left: "-1px", position: "absolute", marginTop: "20px" }}
         >
           <DateRangeIcon
             style={{
@@ -435,7 +441,9 @@ export function Feed (props: IFeedProps) {
         }}
         className={classes.ext}
       ></Typography>
-      <DashFoot />
+      <Container className={classes.ash}>
+        <DashFoot />
+      </Container>
     </Container>
   );
 }

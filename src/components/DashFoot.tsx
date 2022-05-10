@@ -18,12 +18,12 @@ export function DashFoot (props:  DashFootProps) {
           marginRight: "0px",
           padding: 0,
           position: "absolute",
-          marginLeft: "-254px",
+          marginLeft: "-266px",
           marginTop: "30px",
           zIndex: "9",
         }}
       >
-        <Typography style={{ backgroundColor: "#213d7a", color: "white", marginTop: "-0px", marginLeft: "1276px", position: "absolute", width: "7%", height: "15vh" }}></Typography>
+        <Typography style={{ backgroundColor: "#213d7a", color: "white", marginTop: "-0px", marginLeft: "1276px", position: "absolute", width: "6%", height: "15vh" }}></Typography>
         <Container style={{ marginTop: "18px", marginLeft: "50px" }}>
           <DateRangeIcon
             style={{
