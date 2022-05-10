@@ -60,13 +60,15 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   del: {
-    width: "71%",
-    marginLeft: "20px",
+    [theme.breakpoints.down("sm")]: {
+    width: "20%",
+    position: "relative",
+    },
   },
   sor: {
     [theme.breakpoints.down("sm")]: {
-      width: "79%",
-      marginLeft: "20px",
+      width: "90%",
+      marginLeft: "0px",
       marginTop: "20px",
     },
   },
@@ -75,6 +77,13 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: "-70px",
       position: "relative",
     },
+  },
+  tom: {
+    [theme.breakpoints.down("sm")]: {
+      width: "5%",
+      position: "relative",
+      textAlign: "center",
+    }
   },
 }));
 
@@ -274,6 +283,7 @@ export default function RowAndColumnSpacing() {
               fontSize: "16px",
               textAlign: "left",
             }}
+            className={classes.tom}
           >
             Kubeflow supports a
             <Link

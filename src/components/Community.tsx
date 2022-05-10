@@ -45,7 +45,7 @@ const useStyles = makeStyles((theme) => ({
   },
   det: {
     [theme.breakpoints.down("sm")]: {
-      left: "-140px",
+      left: "-90px",
       position: "absolute",
       textAlign: "center",
       width: "22%",
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   },
   pri: {
     [theme.breakpoints.down("sm")]: {
-      left: "-340px",
+      left: "-280px",
       position: "absolute",
       paddingTop: "100px",
       backgroundColor: "#213d7a",
@@ -66,7 +66,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cons: {
      [theme.breakpoints.down("sm")]: {
-       left: "-40px",
+       left: "-70px",
        position: "absolute",
      },
   },

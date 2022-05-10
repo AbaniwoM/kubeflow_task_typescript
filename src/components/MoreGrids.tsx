@@ -23,20 +23,21 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-100px",
       marginTop: "20px",
-      width: "111%",
+      width: "113%",
     },
   },
   nes: {
     [theme.breakpoints.down("sm")]: {
       marginLeft: "-100px",
       position: "relative",
-      width: "99%",
+      width: "101%",
     },
   },
   mul: {
     [theme.breakpoints.down("sm")]: {
-      width: "79%",
-      marginLeft: "19px",
+      width: "90%",
+      marginLeft: "0px",
+      marginTop: "20px",
     },
   },
   frm: {
