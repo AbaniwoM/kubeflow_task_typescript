@@ -19,6 +19,36 @@ const useStyles = makeStyles((theme) => ({
       cursor: "pointer",
     },
   },
+  pip: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "-100px",
+      marginTop: "20px",
+      width: "106%",
+    },
+  },
+  nes: {
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: "-100px",
+      position: "relative",
+      width: "94%",
+    },
+  },
+  mul: {
+    [theme.breakpoints.down("sm")]: {
+      width: "79%",
+      marginLeft: "19px",
+    },
+  },
+  frm: {
+    width: "70%",
+    marginLeft: "19px",
+  },
+  wrk: {
+    [theme.breakpoints.down("sm")]: {
+      paddingLeft: "-70px",
+      position: "relative",
+    },
+  },
 }));
 
 export default function RowAndColumnSpacing() {
@@ -39,6 +69,7 @@ export default function RowAndColumnSpacing() {
             border: "1px solid rgba(0,0,0,.125)",
             borderRadius: "5px 5px 0px 0px",
           }}
+          className={classes.pip}
         >
           <CardMedia
             image="https://www.kubeflow.org/docs/images/logos/Pipeline.png"
@@ -56,6 +87,7 @@ export default function RowAndColumnSpacing() {
             height: "46vh",
             padding: "23px",
           }}
+          className={classes.nes}
         >
           <Typography
             style={{
@@ -104,6 +136,7 @@ export default function RowAndColumnSpacing() {
             border: "1px solid rgba(0,0,0,.125)",
             borderRadius: "5px 5px 0px 0px",
           }}
+          className={classes.mul}
         >
           <CardMedia
             image="https://www.kubeflow.org/docs/images/logos/MultiPlatform.png"
@@ -121,6 +154,7 @@ export default function RowAndColumnSpacing() {
             height: "46vh",
             padding: "23px",
           }}
+          className={classes.frm}
         >
           <Typography
             style={{
@@ -132,6 +166,7 @@ export default function RowAndColumnSpacing() {
               marginLeft: "-65px",
               width: "110%",
             }}
+            className={classes.wrk}
           >
             Multi-Framework
           </Typography>
