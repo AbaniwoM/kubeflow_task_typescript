@@ -13,6 +13,7 @@ import ArticleIcon from "@mui/icons-material/Article";
 import RssFeedIcon from "@mui/icons-material/RssFeed";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Version } from "./Version";
+import { Hamburger } from "./Hamburger";
 
 export interface IDashHeaderProps {}
 
@@ -31,6 +32,14 @@ const useStyles = makeStyles((theme) => ({
   },
   badge: {
     marginRight: theme.spacing(2),
+  },
+  menu: {
+    display: "none",
+    [theme.breakpoints.down("sm")]: {
+      display: "block",
+      position: "absolute",
+      marginLeft: "267px",
+    },
   },
   media: {
     width: "80px",
@@ -112,6 +121,9 @@ export const DashHeader: FC = (props: IDashHeaderProps) => {
           </Typography>
         </Container>
         <Version />
+        <Typography className={classes.menu}>
+          <Hamburger />
+        </Typography>
       </Toolbar>
     </AppBar>
   );

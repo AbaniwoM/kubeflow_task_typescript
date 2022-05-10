@@ -9,12 +9,11 @@ export interface  DashFootProps {
 
 export function DashFoot (props:  DashFootProps) {
   return (
-    <div>
       <Container
         style={{
           backgroundColor: "#213d7a",
           backgroundSize: "cover",
-          width: "280%",
+          width: "480%",
           height: "15vh",
           marginRight: "0px",
           padding: 0,
@@ -24,7 +23,8 @@ export function DashFoot (props:  DashFootProps) {
           zIndex: "9",
         }}
       >
-        <Container style={{marginTop: "18px", marginLeft: "50px"}}>
+        <Typography style={{ backgroundColor: "#213d7a", color: "white", marginTop: "-0px", marginLeft: "1276px", position: "absolute", width: "7%", height: "15vh" }}></Typography>
+        <Container style={{ marginTop: "18px", marginLeft: "50px" }}>
           <DateRangeIcon
             style={{
               position: "absolute",
@@ -58,11 +58,16 @@ export function DashFoot (props:  DashFootProps) {
           BY 4.0
         </Typography>
         <Typography
-          style={{ color: "#4279f4", fontSize: "12.8px", textAlign: "center", marginLeft: "70px", marginTop: "5px" }}
+          style={{
+            color: "#4279f4",
+            fontSize: "12.8px",
+            textAlign: "center",
+            marginLeft: "70px",
+            marginTop: "5px",
+          }}
         >
           Privacy Policy
         </Typography>
       </Container>
-    </div>
   );
 }

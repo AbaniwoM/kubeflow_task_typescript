@@ -28,6 +28,9 @@ const useStyles = makeStyles((theme) => ({
       position: "fixed",
       top: 0,
     },
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
+    },
   },
   container: {
     marginTop: "2px",

@@ -15,8 +15,14 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   contin: {
+    position: "absolute",
+    width: "100%",
+    marginLeft: "-24px",
     [theme.breakpoints.down("sm")]: {
-      display: "block",
+      position: "absolute",
+      overflowX: "hidden",
+      padding: "0px",
+      width: "100%",
     },
   },
 }));
