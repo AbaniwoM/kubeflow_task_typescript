@@ -8,14 +8,14 @@ export interface IAboutProps {
 const useStyles = makeStyles((theme) => ({
   top: {
     [theme.breakpoints.down("sm")]: {
-      marginTop: "660px",
+      marginTop: "620px",
       paddingLeft: "40px",
       position: "absolute",
     },
   },
   sub: {
     [theme.breakpoints.down("sm")]: {
-      paddingTop: "720px",
+      paddingTop: "680px",
       paddingLeft: "-50px",
       position: "relative",
     },

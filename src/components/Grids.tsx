@@ -34,14 +34,14 @@ const useStyles = makeStyles((theme) => ({
   },
   ten: {
     [theme.breakpoints.down("sm")]: {
-      width: "85%",
+      width: "81%",
       marginTop: "20px",
       marginLeft: "20px",
     },
   },
   tentext: {
     [theme.breakpoints.down("sm")]: {
-      width: "77%",
+      width: "74%",
       marginLeft: "20px",
     },
   },
@@ -60,12 +60,12 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   del: {
-    width: "85%",
+    width: "80%",
     marginLeft: "20px",
   },
   sor: {
     [theme.breakpoints.down("sm")]: {
-      width: "85%",
+      width: "81%",
       marginLeft: "20px",
       marginTop: "20px",
     },
