@@ -7,17 +7,10 @@ import Popper from "@mui/material/Popper";
 import MenuList from "@mui/material/MenuList";
 import Stack from "@mui/material/Stack";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Typography, makeStyles, Link, Container } from "@material-ui/core";
+import { Typography, Link, Container } from "@material-ui/core";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 
-const useStyles = makeStyles((theme) => ({
-  text: {
-    fontSize: "15.4px",
-    fontWeight: 800,
-    marginLeft: 10,
-  },
-}));
 export const SubHamburger = () => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef<HTMLButtonElement>(null);
@@ -56,7 +49,6 @@ export const SubHamburger = () => {
     prevOpen.current = open;
   }, [open]);
 
-const classes = useStyles();
   return (
     <Stack direction="row" spacing={2}>
       <div>
